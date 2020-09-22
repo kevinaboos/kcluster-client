@@ -25,6 +25,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import log
 import logging
 logger = log.start_log("{0}/logs/kubeutils.log".format(utils.getHome()), logging.DEBUG, logging.INFO, 'w', 'kubelog')
+logging.disable(logging.ERROR)
 
 methods = {}
 clusters = {}
